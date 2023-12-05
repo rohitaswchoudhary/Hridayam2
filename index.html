@@ -19,7 +19,7 @@
       <!-- Responsive-->
       <link rel="stylesheet" href="css/responsive.css">
       <!-- fevicon -->
-      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <link rel="icon" href="images/hridayam-Logo-2.png" type="image/gif" />
       <!-- Scrollbar Custom CSS -->
       <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
       <!-- Tweaks for older IEs-->
@@ -150,10 +150,10 @@
                            <li class="nav-item">
                               <a class="nav-link" href="services.html">Services</a>
                            </li>
-                           <!-- <li class="nav-item">
+                           <li class="nav-item">
                               <a class="nav-link" href="gallery.html">Gallery</a>
                            </li>
-                           <li class="nav-item">
+                           <!-- <li class="nav-item">
                               <a class="nav-link" href="Javascript:void(0)">RSVP</a>
                            </li>
                            <li class="nav-item">
@@ -191,7 +191,7 @@
                </div>
                <div class="col-md-10 offset-md-1">
                   <div class="about_img text_align_center">
-                     <figure><img src="images/CD3_2170 (2).jpg" alt="#"/></figure>
+                     <figure><img src="images/CD3_6775.jpg" alt="#"/></figure>
                   </div>
                </div>
                <div class="col-md-8 offset-md-2">
@@ -221,7 +221,7 @@
                </div>
                <div class="col-md-5">
                   <div class="doi">
-                     <figure><img src="images/_J2A1702 1.jpg" alt="#"/></figure>
+                     <figure><img src="images/CD3_6775.webp" alt="#"/></figure>
                   </div>
                </div>
             </div>
@@ -247,7 +247,7 @@
                               <img src="images/CD3_0886 1.jpg" alt="Bridge">
                               <div class="view_main">
                                  <h3>Couple</h3>
-                                 <a class="view_btn" href="images/CD3_0886 1.jpg"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                                 <a class="view_btn" href="images/CD3_2296.webp"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
                               </div>
                            </div>
                         </div>
@@ -275,7 +275,7 @@
                         </div>
                         <div class="col-md-12 ma_bottom30">
                            <div class="lightbox">
-                              <img src="images/_J2A1702 1.jpg" alt="Bridge">
+                              <img src="images/CD3_2245 (1).jpg" alt="Bridge">
                               <div class="view_main">
                                  <h3>Couple</h3>
                                  <a class="view_btn" href="images/_J2A1702 1.jpg"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
@@ -288,7 +288,7 @@
                      <div class="row">
                         <div class="col-md-12 ma_bottom30">
                            <div class="lightbox">
-                              <img src="images/_J2A1702 1.jpg" alt="Bridge">
+                              <img src="images/J2A1692-1-1.webp" alt="Bridge">
                               <div class="view_main">
                                  <h3>Couple</h3>
                                  <a class="view_btn" href="images/_J2A1702 1.jpg"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
@@ -314,6 +314,56 @@
          </div>
       </div>
       <!-- end gallery -->
+      <!-- couple -->
+      <div class="couple">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-md-7">
+                  <div class="titlepage text_align_left">
+                     <span>Our footprints</span>
+                     <h2>Meet Happy Couple</h2>
+                     <div id="projectFacts" class="sectionClass">
+                        <div class="fullWidth eight columns">
+                            <div class="projectFactsWrap ">
+                                <div class="item wow fadeInUpBig animated animated" data-number="12" style="visibility: visible;">
+                                    <i class="fa fa-heart"></i>
+                                    <p id="number1" class="number">12</p>
+                                    <span></span>
+                                    <p>Weddings</p>
+                                </div>
+                                <div class="item wow fadeInUpBig animated animated" data-number="55" style="visibility: visible;">
+                                    <i class="fa fa-smile-o"></i>
+                                    <p id="number2" class="number">55</p>
+                                    <span></span>
+                                    <p>Happy clients</p>
+                                </div>
+                                <div class="item wow fadeInUpBig animated animated" data-number="359" style="visibility: visible;">
+                                    <i class="fa fa-video-camera"> </i>
+                                    <p id="number3" class="number">359</p>
+                                    <span></span>
+                                    <p>VIDEOS PRODUCED</p>
+                                </div>
+                                <div class="item wow fadeInUpBig animated animated" data-number="246" style="visibility: visible;">
+                                    <i class="fa fa-camera"></i>
+                                    <p id="number4" class="number">246</p>
+                                    <span></span>
+                                    <p>PHOTOS DELIVERED</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <a class="read_more whitebg" href="Javascript:void(0)">See More</a>
+                  </div>
+               </div>
+               <div class="col-md-5">
+                  <div class="doi">
+                     <figure><img src="images/_J2A1702 1.jpg" alt="#"/></figure>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- couple -->
       <!-- contact -->
       <div class="contact">
          <div class="container-fluid">
@@ -470,6 +520,37 @@
             header.classList.remove("sticky");
           }
          }
+      </script>
+
+   <script>
+
+	$.fn.jQuerySimpleCounter = function( options ) {
+	    var settings = $.extend({
+	        start:  0,
+	        end:    100,
+	        easing: 'swing',
+	        duration: 400,
+	        complete: ''
+	    }, options );
+
+	    var thisElement = $(this);
+
+	    $({count: settings.start}).animate({count: settings.end}, {
+			duration: settings.duration,
+			easing: settings.easing,
+			step: function() {
+				var mathCount = Math.ceil(this.count);
+				thisElement.text(mathCount);
+			},
+			complete: settings.complete
+		});
+	};
+
+
+$('#number1').jQuerySimpleCounter({end: 12,duration: 3000});
+$('#number2').jQuerySimpleCounter({end: 55,duration: 3000});
+$('#number3').jQuerySimpleCounter({end: 359,duration: 2000});
+$('#number4').jQuerySimpleCounter({end: 246,duration: 2500});
       </script>
    </body>
 </html>
