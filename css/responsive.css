@@ -137,9 +137,11 @@
         outline: inherit;
     }
     .navigation.navbar-dark .navbar-toggler-icon {
-        background: url(../images/menu_icon.png);
+        background: url(../icon/images.png);
         background-repeat: no-repeat;
+        background-color: #021626;
         width: 48px;
+        height: 32px;
         float: right;
     }
     .d_none {
@@ -236,9 +238,10 @@
         outline: inherit;
     }
     .navigation.navbar-dark .navbar-toggler-icon {
-        background: url(../images/menu_icon.png);
+        background: url(../icon/images.png);
         background-repeat: no-repeat;
         width: 48px;
+        height: 32px;
     }
     .d_none {
         display: none;
